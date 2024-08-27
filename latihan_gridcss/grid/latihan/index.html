@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width: 500px) {
+            *{
+                font-size: 4vw;
+            }
+            aside{
+                font-size: 1vw !important;
+            }
+            
+        }
+        @media screen and (max-width: 762px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-auto-rows: minmax(100px,auto);
+                margin: 0 auto;
+                background-color: red;
+                grid-gap: 10px;
+                max-width: 960px;
+                grid-template-areas: 
+                    "head head head head"
+                    "aside aside aside aside"
+                    "main main main main"
+                    "nav nav nav nav"
+                    "footer footer footer footer"
+                ;
+            }
+
+            aside{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                font-size: 12px;
+            }
+        }
+        
+
+        @media screen and (min-width: 762px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-auto-rows: minmax(100px,auto);
+                margin: 0 auto;
+                background-color: red;
+                grid-gap: 10px;
+                max-width: 960px;
+                grid-template-areas: 
+                    "head head head head"
+                    "aside aside aside aside"
+                    "nav main main main"
+                    "footer footer footer footer"
+                ;
+            }
+
+            aside{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+
+            main{
+                p{
+                    text-align: left !important;
+
+                }
+            }
+        }
+    
+        @media screen and (min-width: 992px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-auto-rows: minmax(100px,auto);
+                margin: 0 auto;
+                background-color: red;
+                grid-gap: 10px;
+                max-width: 960px;
+                grid-template-areas: 
+                    "head head head head"
+                    "aside main main main"
+                    "nav main main main"
+                    "footer footer footer footer"
+                ;
+            }
+            aside{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        .container>*{
+            background-color: blue;
+            padding: 30px;
+        }
+
+        header{
+            grid-area: head;
+        }
+        main{
+            grid-area: main;
+        }
+        aside{
+            text-align: center;
+            grid-area: aside;
+        }
+        nav{
+            grid-area: nav;
+        }
+        footer{
+            grid-area: footer;
+        }
+/*        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-auto-rows: minmax(100px,auto);
+            margin: 0 auto;
+            gap: 10px;
+        }
+
+        .container>*{
+            background-color: blue;
+            padding: 30px;
+        }
+        
+        @media screen and (max-width: 991px) {
+            header{
+                grid-column: 1/5;
+            }
+            main{
+                grid-area: 3/2/5/5;
+            }
+            nav{
+                grid-row: 3/5;
+            }
+            aside{
+                grid-area: 2/1/3/2;
+            }
+            section{
+                grid-area: 2/1/2/5;
+            }
+            footer{
+                grid-column: 1/5;
+            }       
+        }
+
+        @media screen and (min-width: 992px) {
+            header{
+                grid-column: 1/5;
+            }
+            main{
+                grid-column: 2/5;
+                grid-row: 2/4;
+            }
+            aside{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            section{
+                grid-column: 1/5;
+            }
+            footer{
+                grid-column: 1/5;
+            }
+        }*/
+    </style>
+</head>
+    <div class="container">
+        <header>BERITA SATU.NET</header>
+        <main>
+            <p class="one">
+                SpongeBob SquarePants adalah karakter utama dalam serial animasi yang sangat populer berjudul sama, yang pertama kali ditayangkan pada tahun 1999. SpongeBob adalah spons laut yang tinggal di kota bawah laut Bikini Bottom, tepatnya di sebuah rumah nanas. Dengan warna kuning cerah dan bentuk persegi yang menyerupai spons dapur, SpongeBob selalu terlihat ceria dan penuh energi. Ia bekerja sebagai juru masak di restoran Krusty Krab, tempat ia dengan senang hati membuat Krabby Patty, makanan paling populer di kota tersebut. SpongeBob memiliki sifat yang sangat optimis, polos, dan penuh semangat dalam menjalani setiap harinya, meskipun sering kali hal itu membawanya ke dalam situasi yang konyol dan penuh kekacauan.
+            </p>
+            <p class="two">
+                SpongeBob dikenal karena hubungan dekatnya dengan teman-temannya, terutama Patrick Star, seekor bintang laut yang juga memiliki sifat yang sangat polos dan sedikit lamban. Mereka sering kali terlibat dalam petualangan yang aneh dan lucu bersama. Selain Patrick, SpongeBob juga berteman dengan Sandy Cheeks, seekor tupai ilmuwan yang tinggal di bawah laut dengan memakai pakaian khusus. Meskipun SpongeBob sering kali menghadapi berbagai tantangan, baik di tempat kerja maupun dalam kehidupan sehari-harinya, ia selalu mempertahankan sikap positif dan kemauan untuk membantu orang lain. Serial ini menonjolkan tema-tema persahabatan, kebaikan hati, dan semangat pantang menyerah, yang disampaikan dengan humor yang bisa dinikmati oleh berbagai kalangan usia.
+            </p>
+        </main>
+        <aside>
+            <p class="one">Spongebob Squarepants</p>
+            <p class="two">Patrick Star</p>
+            <p class="three">Squidword Tentacles</p>
+            <p class="four">Eugene Crab</p>
+            <p class="five">Sandy Cheeks</p>
+            <p class="six">Purple Puff</p>
+        </aside>
+        <nav>
+            NAVBAR
+        </nav>
+        <footer>FOOTER</footer>
+    </div>
+    <!-- <div class="container">
+        <header>HEADER</header>
+        <main>MAIN</main>
+        <aside>ASIDE</aside>
+        <nav>NAV</nav>
+        <section>SECTION</section>
+        <footer>FOOTER</footer>
+    </div> -->
+</body>
+</html>
